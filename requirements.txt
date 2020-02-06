@@ -1,0 +1,24 @@
+-i https://pypi.org/simple
+boto3==1.11.9
+boto==2.49.0
+botocore==1.14.9
+certifi==2019.11.28
+chardet==3.0.4
+cython==0.29.14
+dartsclone==0.6
+docutils==0.15.2
+gensim==3.8.1
+https://object-storage.tyo2.conoha.io/v1/nc_2520839e1f9641b08211a5c85243124a/sudachi/SudachiDict_core-20200127.tar.gz#egg=sudachidict-core
+idna==2.8
+jmespath==0.9.4
+mecab-python3==0.996.3
+numpy==1.18.1
+python-dateutil==2.8.1
+requests==2.22.0
+s3transfer==0.3.2
+scipy==1.4.1
+six==1.14.0
+smart-open==1.9.0
+sortedcontainers==2.1.0
+sudachipy==0.4.2
+urllib3==1.25.8

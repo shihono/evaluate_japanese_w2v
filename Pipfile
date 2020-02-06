@@ -1,0 +1,18 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+chardet = "*"
+numpy = "*"
+scipy = "*"
+gensim = "*"
+mecab-python3 = "*"
+sudachipy = "*"
+sudachidict-core = {file = "https://object-storage.tyo2.conoha.io/v1/nc_2520839e1f9641b08211a5c85243124a/sudachi/SudachiDict_core-20200127.tar.gz"}
+
+[requires]
+python_version = "3.7"
