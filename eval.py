@@ -43,7 +43,7 @@ def main():
     parser = argparse.ArgumentParser(description='japanese word similarity evaluation')
     parser.add_argument('model', help='gensim model path: extension like `.bin` or  `.model` or `.txt` or `.kv')
     parser.add_argument('data', help='evaluation dataset csv path or directory')
-    parser.add_argument('--col', nargs=3, default=[0, 1, 2], help='indexes of word1, word2, similarity')
+    parser.add_argument('--col', nargs=3, default=[0, 1, 2], type=int, help='indexes of word1, word2, similarity')
     parser.add_argument('--verbose', '-v', help='verbose', action='store_true')
     parser.add_argument('--mecab', '-m', help='use mecab', action='store_true')
     parser.add_argument('--mecab_dict', '-d', help='mecab dictionary path')
