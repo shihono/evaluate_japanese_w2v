@@ -191,5 +191,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-
-data/
+# custom setting
+data/*
