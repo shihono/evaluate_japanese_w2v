@@ -5,7 +5,9 @@
 
 [mecab-python3](https://pypi.org/project/mecab-python3/) と [SudachiPy](https://pypi.org/project/SudachiPy/) による分かち書きに対応
 
-## Requirement
+[mecab-python3](https://pypi.org/project/mecab-python3/) and [SudachiPy](https://pypi.org/project/SudachiPy/) for tokenizing Japanese
+
+## Requirements
 
 - chardet
 - numpy
@@ -24,6 +26,11 @@ $ python eval.py model data [option]
 - `model`: [gensim](https://radimrehurek.com/gensim/)で読み込み可能なモデルファイル
 - `data`: 単語1, 単語2, (類似度などの)数値の3つの列を持つcsvファイルもしくはcsvファイルを含むディレクトリ
     - `--col` で3つの列を指定可能 (デフォルトは `[0,1,2]`)
+    
+
+- `model`: The word2vec model file that can be load by [gensim](https://radimrehurek.com/gensim/).
+- `data`: csv file or directory path. The files contain 3 columns of word1, word2, similarity score
+    - 3 columns can be specified by `--col` (default `[0,1,2]`)
 
 ```
 optional arguments:
@@ -50,7 +57,8 @@ Example for Mecab
 - tokenizer(optional): Mecab with [mecab-ipadic-neologd](https://github.com/neologd/mecab-ipadic-neologd)
 
 ```bash
-$ python eval.py /path/to/latest-ja-word2vec-gensim-model/word2vec.gensim.model /path/to/JWSAN/jwsan-1400.txt \
+$ python eval.py /path/to/latest-ja-word2vec-gensim-model/word2vec.gensim.model \
+    /path/to/JWSAN/jwsan-1400.txt \
     -v --col 1 2 4 -m --mecab_dict /usr/local/lib/mecab/dic/mecab-ipadic-neologd 
 ```
 
@@ -67,3 +75,5 @@ Data    1400
 OOV     41
 Corr    0.416
 ```
+
+More results on [学習済み日本語word2vecとその評価について](https://blog.hoxo-m.com/entry/2020/02/20/090000) (write in Japanese)
