@@ -56,7 +56,7 @@ class JapaneseTokenizer:
 
 
 def get_divided_wv(word, wv, ja_tokenizer):
-    if word in wv.vocab:
+    if word in wv:
         return wv.get_vector(word)
 
     div_words = ja_tokenizer.divide_word(word)
@@ -64,7 +64,7 @@ def get_divided_wv(word, wv, ja_tokenizer):
     logger.debug('{} divide into {}'.format(word, div_words))
     oov_cnt = 0
     for idx, w in enumerate(div_words):
-        if w in wv.vocab:
+        if w in wv:
             res_vectors[:, idx] = wv.get_vector(w)
         else:
             oov_cnt += 1

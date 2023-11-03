@@ -139,7 +139,7 @@ def cal_wv_similarity(dataset, wv, oov_score=-1, tokenizer=None):
     oov_cnt = 0
     for i, d in enumerate(dataset.gold_data):
         word1, word2 = d.word1, d.word2
-        if (word1 in wv.vocab) and (word2 in wv.vocab):
+        if (word1 in wv.key_to_index) and (word2 in wv.key_to_index):
             sim = wv.similarity(word1, word2)
         else:
             if tokenizer is not None:
