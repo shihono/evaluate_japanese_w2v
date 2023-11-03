@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "evaluate_japanese_w2v"
-version = "0.1.1"
+version = "0.2.0"
 description = ""
 authors = ["shihono <26952997+shihono@users.noreply.github.com>"]
 
