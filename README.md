@@ -76,4 +76,4 @@ OOV     41
 Corr    0.416
 ```
 
-More results on [学習済み日本語word2vecとその評価について](https://blog.hoxo-m.com/entry/2020/02/20/090000) (write in Japanese)
+More results on [学習済み日本語word2vecとその評価について](https://hoxominc.hatenablog.com/entry/2020/02/20/090000) (write in Japanese)
